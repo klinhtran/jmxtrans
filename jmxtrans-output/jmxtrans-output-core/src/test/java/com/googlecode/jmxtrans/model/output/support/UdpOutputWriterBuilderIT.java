@@ -56,6 +56,7 @@ public class UdpOutputWriterBuilderIT {
 		await().atMost(500, MILLISECONDS).until(messageReceived("message"));
 	}
 
+	
 	private Callable<Boolean> messageReceived(final String message) {
 		return new Callable<Boolean>() {
 			@Override
